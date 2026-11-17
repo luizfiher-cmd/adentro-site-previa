@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PRÉVIA: não indexar. Tirar esta linha ao publicar no endereço oficial. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Adentro Móveis | Marcenaria e mobiliário sob medida em Brasília</title>
+<meta name="description" content="Adentro Móveis: marcenaria sob medida, móveis planejados e mobiliário para áreas comuns, unidades decoradas, corporativo e hotelaria em Brasília - DF. Peça seu orçamento pelo WhatsApp.">
+<meta property="og:title" content="Adentro Móveis | Marcenaria sob medida em Brasília">
+<meta property="og:description" content="Móveis planejados, marcenaria customizada e mobiliário para áreas comuns, unidades decoradas, corporativo e hotelaria.">
+<meta property="og:image" content="img/mesa-redonda-madeira-cadeiras.jpg">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" as="image" href="img/mesa-redonda-madeira-cadeiras.webp">
+<style>
+:root{--escuro:#1c1a18;--texto:#2b2825;--suave:#6d665e;--areia:#f4efe8;--linha:#e4ddd3;--madeira:#9a6a3c;--whats:#1f9d55}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--texto);background:#fff;line-height:1.6;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.2;color:var(--escuro)}
+h2{font-size:clamp(1.7rem,3.2vw,2.4rem);margin-bottom:.6rem}
+.sobre-titulo{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--madeira);font-weight:600;margin-bottom:.6rem}
+.caixa{max-width:1160px;margin:0 auto;padding:0 22px}
+section{padding:80px 0}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:15px 26px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.btn-whats{background:var(--whats);color:#fff}
+.btn-claro{border:1.5px solid rgba(255,255,255,.75);color:#fff}
+.btn svg{width:20px;height:20px;fill:currentColor}
+/* topo */
+header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(17,16,15,.92);backdrop-filter:blur(6px)}
+.topo{display:flex;align-items:center;justify-content:space-between;height:68px}
+.topo img{height:30px;width:auto}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{color:#eee;text-decoration:none;font-size:.93rem}
+nav a:hover{color:#fff;text-decoration:underline}
+.topo .btn{padding:9px 18px;font-size:.9rem}
+#menu-abre{display:none}
+.menu-btn{display:none;color:#fff;font-size:1.6rem;cursor:pointer;padding:6px 10px}
+/* capa */
+.capa{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;background:#222 url(img/mesa-redonda-madeira-cadeiras.webp) center 40%/cover no-repeat}
+.capa:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,.35) 45%,rgba(0,0,0,.78) 100%)}
+.capa .caixa{position:relative;padding-bottom:70px;padding-top:140px}
+.capa h1{color:#fff;font-size:clamp(2.1rem,5vw,3.6rem);max-width:15ch;margin-bottom:1rem}
+.capa p{font-size:clamp(1.05rem,1.8vw,1.25rem);max-width:46ch;margin-bottom:1.8rem;color:#f1ece6}
+.capa .acoes{display:flex;flex-wrap:wrap;gap:12px}
+.capa .local{margin-top:1.6rem;font-size:.92rem;color:#d9d2c9;letter-spacing:.04em}
+/* segmentos */
+.segmentos{background:var(--areia)}
+.grade{display:grid;gap:22px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.seg{background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--linha);display:flex;flex-direction:column}
+.seg img{aspect-ratio:4/3;object-fit:cover;width:100%;height:auto}
+.seg.escuro{background:var(--escuro);color:#e9e4dd;justify-content:center}
+.seg.escuro h3{color:#fff}.seg.escuro p{color:#cfc6bb;margin-bottom:1.2rem}
+.seg div{padding:20px 22px 24px}
+.seg h3{font-size:1.3rem;margin-bottom:.35rem}
+.seg p{color:var(--suave);font-size:.96rem}
+.intro{max-width:62ch;margin-bottom:38px;color:var(--suave)}
+/* como */
+.passos{counter-reset:p;grid-template-columns:repeat(4,1fr)}
+.passo{border-top:2px solid var(--escuro);padding-top:16px}
+.passo:before{counter-increment:p;content:"0" counter(p);font-family:Georgia,serif;font-size:1.6rem;color:var(--madeira)}
+.passo h3{font-size:1.15rem;margin:.3rem 0}
+.passo p{color:var(--suave);font-size:.95rem}
+/* obras */
+.obras{background:var(--escuro);color:#e9e4dd}
+.obras h2{color:#fff}
+.obras .intro{color:#bdb5ab}
+.g-obras{grid-template-columns:repeat(4,1fr)}
+.obra{position:relative;border-radius:10px;overflow:hidden;background:#000}
+.obra img{aspect-ratio:3/4;object-fit:cover;width:100%;height:auto;opacity:.92}
+.obra span{position:absolute;left:0;right:0;bottom:0;padding:34px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font-size:1rem}
+.obra small{display:block;color:#cfc6bb;font-size:.8rem}
+/* clientes */
+.clientes img{margin-top:10px;border-radius:12px;border:1px solid var(--linha)}
+/* sobre */
+.sobre .g2{grid-template-columns:1.1fr .9fr;align-items:center;gap:48px}
+.sobre img{border-radius:14px;aspect-ratio:4/5;object-fit:cover;height:auto;width:100%;max-height:560px}
+.sobre p{margin-bottom:1rem}
+/* contato */
+.contato{background:var(--areia);text-align:center}
+.contato p{max-width:52ch;margin:0 auto 1.6rem;color:var(--suave)}
+.contato .tel{font-size:1.5rem;font-family:Georgia,serif;margin-top:1.2rem}
+footer{background:#111;color:#a59d94;font-size:.88rem;padding:34px 0}
+footer .caixa{display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:space-between;align-items:center}
+footer img{height:22px;width:auto}
+/* whatsapp fixo */
+.whats-fixo{position:fixed;right:18px;bottom:18px;z-index:30;width:60px;height:60px;border-radius:50%;background:var(--whats);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.whats-fixo svg{width:32px;height:32px;fill:#fff}
+.previa{background:#b3261e;color:#fff;text-align:center;font-size:.8rem;padding:4px 8px}
+@media (max-width:900px){
+  .g3,.passos{grid-template-columns:1fr 1fr}
+  .g-obras{grid-template-columns:1fr 1fr}
+  .sobre .g2{grid-template-columns:1fr}
+  .menu-btn{display:block}
+  nav{position:absolute;top:100%;left:0;right:0;background:#111;display:none}
+  #menu-abre:checked ~ nav{display:block}
+  nav ul{flex-direction:column;gap:0;padding:8px 22px 16px}
+  nav li a{display:block;padding:12px 0;border-bottom:1px solid #2a2a2a;font-size:1rem}
+  .topo .btn{display:none}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:60px 0}
+  .g3,.passos{grid-template-columns:1fr}
+  .capa{min-height:88vh;background-position:center 30%}
+  .capa .btn{width:100%;justify-content:center}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FurnitureStore","name":"Adentro Móveis",
+ "description":"Marcenaria sob medida, móveis planejados e mobiliário para áreas comuns, unidades decoradas, corporativo e hotelaria.",
+ "url":"https://adentromoveis.com.br/","telephone":"+55-61-99573-5885",
+ "image":"https://adentromoveis.com.br/img/mesa-redonda-madeira-cadeiras.jpg",
+ "areaServed":{"@type":"City","name":"Brasília"},
+ "address":{"@type":"PostalAddress","addressLocality":"Brasília","addressRegion":"DF","addressCountry":"BR"}}
+</script>
+</head>
+<body>
+<header>
+  <div class="previa">PRÉVIA para o Luiz aprovar. Ainda não está no endereço oficial.</div>
+  <div class="caixa topo">
+    <a href="#inicio" aria-label="Adentro Móveis, início"><img src="img/logo-adentro.webp" alt="Adentro" width="136" height="30"></a>
+    <input type="checkbox" id="menu-abre" hidden>
+    <label for="menu-abre" class="menu-btn" aria-label="Abrir menu">&#9776;</label>
+    <nav aria-label="Menu principal"><ul>
+      <li><a href="#o-que-fazemos">O que fazemos</a></li>
+      <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
+      <li><a href="#obras">Obras</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul></nav>
+    <a class="btn btn-whats" href="https://wa.me/5561995735885?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Adentro%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<section class="capa" id="inicio" aria-label="Apresentação">
+  <div class="caixa">
+    <h1>Marcenaria e mobiliário sob medida em Brasília</h1>
+    <p>Móveis planejados, marcenaria customizada e mobiliário completo para áreas comuns, unidades decoradas, escritórios e hotéis.</p>
+    <div class="acoes">
+      <a class="btn btn-whats" href="https://wa.me/5561995735885?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Adentro%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg>
+        Pedir orçamento no WhatsApp</a>
+      <a class="btn btn-claro" href="#obras">Ver obras</a>
+    </div>
+    <p class="local">Brasília · DF</p>
+  </div>
+</section>
+
+<section class="segmentos" id="o-que-fazemos">
+  <div class="caixa">
+    <p class="sobre-titulo">O que fazemos</p>
+    <h2>Do projeto à montagem, para cada tipo de espaço</h2>
+    <p class="intro">Fazemos móveis sob medida e mobiliário pronto escolhido para o seu projeto, com garantia e suporte depois da entrega.</p>
+    <div class="grade g3">
+      <article class="seg">
+        <img src="img/salao-de-festas-area-comum.webp" alt="Salão de festas de área comum com mesas redondas e cadeiras de madeira e palhinha" loading="lazy" width="1500" height="844">
+        <div><h3>Área comum</h3><p>Salões de festa, halls e espaços de convivência de condomínios e empreendimentos.</p></div>
+      </article>
+      <article class="seg">
+        <img src="img/sala-estante-madeira-projeto.webp" alt="Projeto de sala com estante de madeira, rack e sofá claro" loading="lazy" width="1080" height="913">
+        <div><h3>Unidade decorada e residencial</h3><p>Unidades decoradas, stands de venda e móveis planejados para apartamentos e casas.</p></div>
+      </article>
+      <article class="seg">
+        <img src="img/mesa-redonda-madeira-cadeiras.webp" alt="Mesa redonda de madeira com tampo em raios e cadeiras estofadas" loading="lazy" width="1201" height="1280">
+        <div><h3>Marcenaria customizada</h3><p>Peças únicas feitas sob medida: mesas, painéis, armários, cozinhas e áreas gourmet.</p></div>
+      </article>
+      <article class="seg">
+        <img src="img/cadeira-estofada-madeira.webp" alt="Cadeira de madeira escura com assento e encosto estofados em tecido bege" loading="lazy" width="900" height="1079">
+        <div><h3>Corporativo e hotelaria</h3><p>Escritórios, lojas e protótipos hoteleiros, com o mobiliário completo do projeto.</p></div>
+      </article>
+      <article class="seg">
+        <img src="img/almofadas-moveis-e-adornos.webp" alt="Almofadas bordadas em tons de mostarda e bege sobre sofá claro" loading="lazy" width="900" height="791">
+        <div><h3>Móveis e adornos</h3><p>Pesquisamos em todo o Brasil móveis e complementos que combinam com as imagens do seu projeto.</p></div>
+      </article>
+      <article class="seg escuro">
+        <div><h3>Para construtoras e empresas</h3><p>Atendemos incorporadoras e construtoras de Brasília em unidades decoradas, stands de venda e áreas comuns.</p>
+        <a class="btn btn-whats" href="https://wa.me/5561995735885?text=Ol%C3%A1%2C%20sou%20de%20uma%20construtora%20e%20quero%20falar%20com%20a%20Adentro." target="_blank" rel="noopener">Falar com a Adentro</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="como-trabalhamos">
+  <div class="caixa">
+    <p class="sobre-titulo">Como trabalhamos</p>
+    <h2>Simples para você, cuidadoso na fábrica</h2>
+    <div class="grade passos" style="margin-top:34px">
+      <div class="passo"><h3>Conversa</h3><p>Você manda pelo WhatsApp a planta, fotos ou a ideia do ambiente.</p></div>
+      <div class="passo"><h3>Projeto e orçamento</h3><p>Medimos, detalhamos cada peça e mandamos a proposta por ambiente.</p></div>
+      <div class="passo"><h3>Fabricação</h3><p>Corte em router CNC na nossa marcenaria e conferência de cada peça antes de sair.</p></div>
+      <div class="passo"><h3>Entrega e montagem</h3><p>Nossa equipe instala e acompanha depois da entrega.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="obras" id="obras">
+  <div class="caixa">
+    <p class="sobre-titulo">Obras</p>
+    <h2>Empreendimentos em que já trabalhamos</h2>
+    <p class="intro">Unidades decoradas, stands de venda e áreas comuns em empreendimentos de Brasília.</p>
+    <div class="grade g-obras">
+      <figure class="obra"><img src="img/obra-park-sul.webp" alt="Empreendimento Park Sul" loading="lazy" width="700" height="792"><span>Park Sul<small>Altíssimo padrão</small></span></figure>
+      <figure class="obra"><img src="img/obra-absoluto.webp" alt="Empreendimento Absoluto" loading="lazy" width="700" height="851"><span>Absoluto<small>Alto padrão</small></span></figure>
+      <figure class="obra"><img src="img/obra-supremo.webp" alt="Empreendimento Supremo" loading="lazy" width="700" height="812"><span>Supremo</span></figure>
+      <figure class="obra"><img src="img/obra-metropolitan.webp" alt="Empreendimento Metropolitan" loading="lazy" width="700" height="832"><span>Metropolitan</span></figure>
+      <figure class="obra"><img src="img/obra-duuo.webp" alt="Empreendimento Duuo" loading="lazy" width="700" height="822"><span>Duuo</span></figure>
+      <figure class="obra"><img src="img/obra-paco-linea.webp" alt="Empreendimento Paço Linea" loading="lazy" width="700" height="812"><span>Paço Linea</span></figure>
+      <figure class="obra"><img src="img/obra-chopin.webp" alt="Empreendimento Chopin" loading="lazy" width="700" height="851"><span>Chopin</span></figure>
+      <figure class="obra" style="display:flex;align-items:center;justify-content:center;background:#2a2622;min-height:200px"><a class="btn btn-whats" href="https://wa.me/5561995735885?text=Ol%C3%A1%2C%20quero%20ver%20mais%20obras%20da%20Adentro." target="_blank" rel="noopener">Ver mais no WhatsApp</a></figure>
+    </div>
+  </div>
+</section>
+
+<section class="clientes" id="clientes">
+  <div class="caixa">
+    <p class="sobre-titulo">Quem já confiou na Adentro</p>
+    <h2>Construtoras, incorporadoras, shoppings e hotel</h2>
+    <img src="img/clientes-logos.webp" alt="Brasília Shopping, Vitrinni Shopping, S4 Hotel, Inttermedium, Faenge, Brasal Incorporações, Canova Medeiros, Emarki, Porto, IPE-Omni, OAS, Direcional, Soltec, Grupo Attos, 3L Engenharia, Linea Jr, João Fortes, LB Valor, Area Realty, Base e City" loading="lazy" width="1800" height="660">
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="caixa grade g2">
+    <div>
+      <p class="sobre-titulo">Sobre a Adentro</p>
+      <h2>Mobiliário completo, com uma só empresa cuidando de tudo</h2>
+      <p>A Adentro nasceu do Grupo IVI para atender demandas de construtoras e empresas: pesquisamos em todo o Brasil os móveis e complementos que combinam com as imagens e o caderno de vendas de cada projeto, sempre com qualidade, garantia e suporte no pós-venda.</p>
+      <p>Também fazemos móveis planejados e marcenaria customizada, do projeto à montagem.</p>
+      <a class="btn btn-whats" href="https://wa.me/5561995735885?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Adentro%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Falar com a Adentro</a>
+    </div>
+    <img src="img/mesa-redonda-madeira-cadeiras.webp" alt="Mesa redonda de madeira em varanda com vista para o lago" loading="lazy" width="1201" height="1280">
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="caixa">
+    <p class="sobre-titulo">Contato</p>
+    <h2>Vamos conversar sobre o seu projeto?</h2>
+    <p>Mande a planta, fotos ou a ideia pelo WhatsApp. Respondemos com os próximos passos e o orçamento.</p>
+    <a class="btn btn-whats" href="https://wa.me/5561995735885?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Adentro%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    <p class="tel"><a href="tel:+5561995735885">(61) 99573-5885</a></p>
+    <p>Brasília · DF</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="caixa">
+    <img src="img/logo-adentro.webp" alt="Adentro" width="100" height="22">
+    <span>Adentro Móveis · Marcenaria e mobiliário sob medida · Brasília - DF</span>
+    <span><a href="tel:+5561995735885">(61) 99573-5885</a></span>
+  </div>
+</footer>
+
+<a class="whats-fixo" href="https://wa.me/5561995735885?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Adentro%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+</body>
+</html>
