@@ -18,7 +18,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--texto);background:#fff;line-height:1.6;font-size:17px}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:inherit}
 h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.2;color:var(--escuro)}
 h2{font-size:clamp(1.7rem,3.2vw,2.4rem);margin-bottom:.6rem}
@@ -72,11 +72,13 @@ nav a:hover{color:#fff;text-decoration:underline}
 .obras .intro{color:#bdb5ab}
 .g-obras{grid-template-columns:repeat(4,1fr)}
 .obra{position:relative;border-radius:10px;overflow:hidden;background:#000}
-.obra img{aspect-ratio:3/4;object-fit:cover;width:100%;height:auto;opacity:.92}
+.obra img{aspect-ratio:5/6;object-fit:cover;width:100%;height:auto;opacity:.92}
 .obra span{position:absolute;left:0;right:0;bottom:0;padding:34px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font-size:1rem}
 .obra small{display:block;color:#cfc6bb;font-size:.8rem}
 /* clientes */
-.clientes img{margin-top:10px;border-radius:12px;border:1px solid var(--linha)}
+.clientes img{margin-top:10px;border-radius:12px;border:1px solid var(--linha);width:100%;height:auto}
+.obra-nome{display:flex;align-items:flex-end;min-height:200px;background:#2a2622}
+.obra-nome span{position:static;background:none;padding:14px}
 /* sobre */
 .sobre .g2{grid-template-columns:1.1fr .9fr;align-items:center;gap:48px}
 .sobre img{border-radius:14px;aspect-ratio:4/5;object-fit:cover;height:auto;width:100%;max-height:560px}
@@ -109,6 +111,8 @@ footer img{height:22px;width:auto}
   .g3,.passos{grid-template-columns:1fr}
   .capa{min-height:88vh;background-position:center 30%}
   .capa .btn{width:100%;justify-content:center}
+  .seg img{aspect-ratio:auto;object-fit:contain;background:#f4efe8}
+  .clientes .caixa{padding:0 12px}
 }
 </style>
 <script type="application/ld+json">
@@ -160,11 +164,9 @@ footer img{height:22px;width:auto}
     <p class="intro">Fazemos móveis sob medida e mobiliário pronto escolhido para o seu projeto, com garantia e suporte depois da entrega.</p>
     <div class="grade g3">
       <article class="seg">
-        <img src="img/salao-de-festas-area-comum.webp" alt="Salão de festas de área comum com mesas redondas e cadeiras de madeira e palhinha" loading="lazy" width="1500" height="844">
         <div><h3>Área comum</h3><p>Salões de festa, halls e espaços de convivência de condomínios e empreendimentos.</p></div>
       </article>
       <article class="seg">
-        <img src="img/sala-estante-madeira-projeto.webp" alt="Projeto de sala com estante de madeira, rack e sofá claro" loading="lazy" width="1080" height="913">
         <div><h3>Unidade decorada e residencial</h3><p>Unidades decoradas, stands de venda e móveis planejados para apartamentos e casas.</p></div>
       </article>
       <article class="seg">
@@ -206,13 +208,13 @@ footer img{height:22px;width:auto}
     <h2>Empreendimentos em que já trabalhamos</h2>
     <p class="intro">Unidades decoradas, stands de venda e áreas comuns em empreendimentos de Brasília.</p>
     <div class="grade g-obras">
-      <figure class="obra"><img src="img/obra-park-sul.webp" alt="Empreendimento Park Sul" loading="lazy" width="700" height="792"><span>Park Sul<small>Altíssimo padrão</small></span></figure>
-      <figure class="obra"><img src="img/obra-absoluto.webp" alt="Empreendimento Absoluto" loading="lazy" width="700" height="851"><span>Absoluto<small>Alto padrão</small></span></figure>
-      <figure class="obra"><img src="img/obra-supremo.webp" alt="Empreendimento Supremo" loading="lazy" width="700" height="812"><span>Supremo</span></figure>
-      <figure class="obra"><img src="img/obra-metropolitan.webp" alt="Empreendimento Metropolitan" loading="lazy" width="700" height="832"><span>Metropolitan</span></figure>
-      <figure class="obra"><img src="img/obra-duuo.webp" alt="Empreendimento Duuo" loading="lazy" width="700" height="822"><span>Duuo</span></figure>
-      <figure class="obra"><img src="img/obra-paco-linea.webp" alt="Empreendimento Paço Linea" loading="lazy" width="700" height="812"><span>Paço Linea</span></figure>
-      <figure class="obra"><img src="img/obra-chopin.webp" alt="Empreendimento Chopin" loading="lazy" width="700" height="851"><span>Chopin</span></figure>
+      <figure class="obra"><img src="img/obra-duuo.webp" alt="Empreendimento Duuo, foto do prédio" loading="lazy" width="700" height="822"><span>Duuo</span></figure>
+      <figure class="obra"><img src="img/obra-paco-linea.webp" alt="Empreendimento Paço Linea, foto do prédio" loading="lazy" width="700" height="812"><span>Paço Linea</span></figure>
+      <figure class="obra"><img src="img/obra-chopin.webp" alt="Empreendimento Chopin, foto do prédio" loading="lazy" width="700" height="851"><span>Chopin</span></figure>
+      <figure class="obra obra-nome"><span>Park Sul<small>Altíssimo padrão</small></span></figure>
+      <figure class="obra obra-nome"><span>Absoluto<small>Alto padrão</small></span></figure>
+      <figure class="obra obra-nome"><span>Supremo</span></figure>
+      <figure class="obra obra-nome"><span>Metropolitan</span></figure>
       <figure class="obra" style="display:flex;align-items:center;justify-content:center;background:#2a2622;min-height:200px"><a class="btn btn-whats" href="https://wa.me/5561995735885?text=Ol%C3%A1%2C%20quero%20ver%20mais%20obras%20da%20Adentro." target="_blank" rel="noopener">Ver mais no WhatsApp</a></figure>
     </div>
   </div>
