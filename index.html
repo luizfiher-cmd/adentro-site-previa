@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <!-- PRÉVIA: não indexar. Tirar esta linha ao publicar no endereço oficial. -->
 <meta name="robots" content="noindex, nofollow">
-<title>Adentro Móveis | Marcenaria e mobiliário sob medida em Brasília</title>
-<meta name="description" content="Adentro Móveis: marcenaria sob medida, móveis planejados e mobiliário para áreas comuns, unidades decoradas, corporativo e hotelaria em Brasília - DF.">
-<meta property="og:title" content="Adentro Móveis | Marcenaria sob medida em Brasília">
+<title>Adentro | Marcenaria, móveis, sofás e decoração em Brasília</title>
+<meta name="description" content="Adentro, do Grupo IVI: marcenaria sob medida, sofás e estofados, móveis soltos, adornos e decoração, e o mobiliário completo de empreendimentos em Brasília.">
+<meta property="og:title" content="Adentro | Marcenaria, móveis e decoração em Brasília">
 <meta property="og:image" content="img/mesa-redonda-madeira-cadeiras.jpg">
 <meta property="og:locale" content="pt_BR">
 <meta name="theme-color" content="#151413">
 <link rel="icon" href="img/favicon.png">
 <link rel="preload" as="image" href="img/mesa-redonda-madeira-cadeiras.webp">
 <style>
-:root{--preto:#151413;--texto:#2b2723;--cinza:#7a7268;--claro:#f6f3ee;--linha:#e2dbd1;--madeira:#8a5a2b;
+:root{--preto:#151413;--texto:#2b2723;--cinza:#7a7268;--claro:#f6f3ee;--linha:#e2dbd1;--madeira:#8a5a2b;--aviso:#b5562b;
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
   --sans:"Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -26,16 +26,15 @@ a{color:inherit;text-decoration:none}
 .maius{text-transform:uppercase;letter-spacing:.28em;font-size:.7rem;font-weight:500}
 h1,h2{font-weight:300;line-height:1.2;color:var(--preto)}
 h2{text-transform:uppercase;letter-spacing:.2em;font-size:clamp(1.05rem,4.2vw,1.45rem);font-weight:400;margin-bottom:1.4rem}
+h3{font-weight:500}
 .frase{font-family:var(--serif);font-size:clamp(1.45rem,6vw,2.3rem);line-height:1.35;color:var(--preto);font-weight:400;max-width:24ch}
-p.txt{color:var(--cinza);max-width:52ch}
+p.txt{color:var(--cinza);max-width:56ch}
 section{padding:84px 0}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.7rem;min-height:50px;padding:0 30px;border:1px solid currentColor;
   text-transform:uppercase;letter-spacing:.24em;font-size:.68rem;font-weight:500;transition:background .25s,color .25s}
-.btn:hover{background:var(--preto);color:#fff;border-color:var(--preto)}
 .btn svg{width:17px;height:17px;fill:currentColor}
 .btn-cheio{background:var(--preto);color:#fff;border-color:var(--preto)}
-.btn-cheio:hover{background:#000}
-/* topo */
+.falta{display:block;margin-top:.9rem;border:1px dashed var(--aviso);color:var(--aviso);font-size:.74rem;padding:6px 9px;line-height:1.45;font-weight:400}
 .previa{background:#9e2a1f;color:#fff;text-align:center;font-size:.72rem;padding:5px 10px}
 header{position:absolute;left:0;right:0;z-index:20}
 .topo{display:flex;align-items:center;justify-content:space-between;height:68px}
@@ -45,58 +44,72 @@ header{position:absolute;left:0;right:0;z-index:20}
 .menu-btn span,.menu-btn span:after{display:block;width:24px;height:1px;background:#fff;position:relative}
 .menu-btn span:after{content:"";position:absolute;top:7px;width:16px;right:0}
 .menu-btn span{top:-3px}
-nav{position:fixed;inset:0;background:var(--preto);display:none;z-index:40;padding:110px 30px 40px}
-#menu-abre:checked ~ nav{display:block}
-nav ul{list-style:none}
-nav a{display:block;color:#eee;padding:14px 0;text-transform:uppercase;letter-spacing:.24em;font-size:.82rem;border-bottom:1px solid #2a2725}
+nav.menu{position:fixed;inset:0;background:var(--preto);display:none;z-index:40;padding:96px 30px 40px;overflow-y:auto}
+#menu-abre:checked ~ nav.menu{display:block}
+nav.menu ul{list-style:none}
+nav.menu a{display:block;color:#eee;padding:13px 0;text-transform:uppercase;letter-spacing:.22em;font-size:.8rem;border-bottom:1px solid #2a2725}
+nav.menu .sub{color:#8f857a;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;margin:22px 0 4px}
 .fechar{position:absolute;top:22px;right:24px;color:#fff;font-size:2rem;line-height:1;cursor:pointer;font-weight:200}
-/* capa */
 .capa{position:relative;height:100vh;height:100svh;min-height:560px;color:#fff;padding:0;overflow:hidden;background:var(--preto)}
 .capa > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 45%}
-.capa:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.05) 55%,rgba(0,0,0,.7) 100%)}
+.capa:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.05) 55%,rgba(0,0,0,.72) 100%)}
 .capa > .caixa{position:absolute;left:0;right:0;bottom:0;z-index:2;padding-bottom:calc(46px + env(safe-area-inset-bottom))}
-.capa h1{color:#fff;text-transform:uppercase;letter-spacing:.26em;font-size:clamp(1rem,4.4vw,1.5rem);font-weight:400;line-height:1.6;margin-bottom:1.6rem;max-width:22ch}
+.capa h1{color:#fff;text-transform:uppercase;letter-spacing:.24em;font-size:clamp(1rem,4.4vw,1.5rem);font-weight:400;line-height:1.6;margin-bottom:.8rem;max-width:24ch}
+.capa .sub{color:#ddd5cb;font-size:.95rem;max-width:36ch;margin-bottom:1.6rem}
 .capa .btn{color:#fff}
-.capa .btn:hover{background:#fff;color:var(--preto);border-color:#fff}
-/* manifesto */
-.manifesto{text-align:left}
+.linhas{padding-top:72px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:0 26px 6px;margin:0 -26px 28px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;border:1px solid var(--linha);padding:10px 16px;text-transform:uppercase;letter-spacing:.18em;font-size:.64rem;font-weight:500;white-space:nowrap}
+.cartoes{display:grid;gap:16px}
+.cartao{position:relative;display:block;color:#fff;background:var(--preto);overflow:hidden;scroll-margin-top:20px}
+.cartao img{width:100%;aspect-ratio:4/5;object-fit:cover;opacity:.9}
+.cartao .t{position:absolute;left:0;right:0;bottom:0;padding:70px 22px 22px;background:linear-gradient(transparent,rgba(0,0,0,.78))}
+.cartao.sem-foto{background:var(--claro);color:var(--preto);border:1px solid var(--linha)}
+.cartao.sem-foto .t{position:static;background:none;padding:28px 22px}
+.cartao .n{display:block;font-family:var(--serif);font-size:1.05rem;opacity:.75;margin-bottom:.3rem}
+.cartao h3{text-transform:uppercase;letter-spacing:.2em;font-size:.86rem;margin-bottom:.4rem}
+.cartao p{font-size:.93rem;opacity:.92}
+.cartao ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:.8rem}
+.cartao li{font-size:.7rem;letter-spacing:.08em;border:1px solid currentColor;padding:3px 8px;opacity:.85}
 .manifesto .maius{color:var(--madeira);display:block;margin-bottom:1.6rem}
 .manifesto p.txt{margin-top:1.4rem}
-/* fotos ponta a ponta */
+.numeros{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:40px;border-top:1px solid var(--linha);padding-top:26px}
+.numeros b{display:block;font-family:var(--serif);font-weight:400;font-size:1.9rem;color:var(--preto);line-height:1.1}
+.numeros span{font-size:.72rem;letter-spacing:.06em;color:var(--cinza)}
 .foto-cheia{margin:0}
 .foto-cheia img{width:100%;height:auto}
 .legenda{display:flex;gap:14px;padding:14px 26px 0;font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--cinza)}
 .legenda b{font-weight:500;color:var(--preto)}
 .fotos{display:grid;gap:56px;padding-bottom:84px}
-/* serviços */
-.servicos{background:var(--claro)}
-.lista{list-style:none;border-top:1px solid var(--linha)}
-.lista li{padding:24px 0;border-bottom:1px solid var(--linha)}
-.lista h3{text-transform:uppercase;letter-spacing:.2em;font-size:.82rem;font-weight:500;color:var(--preto);margin-bottom:.4rem}
-.lista p{color:var(--cinza);font-size:.95rem}
-/* projetos */
+.lojas{background:var(--claro)}
+.loja{border-top:1px solid var(--linha);padding:24px 0}
+.loja h3{text-transform:uppercase;letter-spacing:.2em;font-size:.86rem;color:var(--preto);margin-bottom:.3rem}
+.loja p{color:var(--cinza)}
+.historia{list-style:none;border-left:1px solid var(--linha);margin:30px 0 0 4px;padding-left:22px}
+.historia li{position:relative;padding-bottom:22px}
+.historia li:before{content:"";position:absolute;left:-26px;top:.6rem;width:7px;height:7px;border-radius:50%;background:var(--madeira)}
+.historia b{font-family:var(--serif);font-weight:400;font-size:1.25rem;color:var(--preto);display:block}
+.historia span{color:var(--cinza);font-size:.95rem}
 .projetos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 12px}
 .projeto img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .projeto:first-child{grid-column:1/-1}
 .projeto:first-child img{aspect-ratio:4/3}
-.projeto h3,.proj-nome h3{font-weight:400;font-size:.95rem;color:var(--preto);margin-top:.8rem}
-.projeto span,.proj-nome span{font-size:.68rem;text-transform:uppercase;letter-spacing:.2em;color:var(--cinza)}
-.proj-nomes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px;margin-top:34px;border-top:1px solid var(--linha)}
-.proj-nomes li{padding:14px 0;border-bottom:1px solid var(--linha)}
-/* clientes */
+.projeto h3,.nomes h3{font-weight:400;font-size:.95rem;color:var(--preto);margin-top:.8rem}
+.projeto span{font-size:.68rem;text-transform:uppercase;letter-spacing:.2em;color:var(--cinza)}
+.nomes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px;margin-top:34px;border-top:1px solid var(--linha)}
+.nomes li{padding:12px 0;border-bottom:1px solid var(--linha);font-size:.92rem;color:var(--preto)}
 .clientes{background:var(--claro);padding:70px 0}
-.clientes h2{text-align:center}
-.clientes p.txt{text-align:center;margin:0 auto 34px}
+.clientes h2,.clientes p.txt{text-align:center}
+.clientes p.txt{margin:0 auto 34px}
 .grade-logos{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 10px}
 .grade-logos li{min-width:0;display:flex;align-items:center;justify-content:center}
 .grade-logos img{width:100%;aspect-ratio:2/1;object-fit:contain;opacity:.72;filter:grayscale(1)}
-/* processo */
 .passos{list-style:none;counter-reset:p;display:grid;gap:34px}
 .passos li{counter-increment:p}
 .passos li:before{content:"0" counter(p);display:block;font-family:var(--serif);font-size:1.9rem;color:var(--madeira);margin-bottom:.4rem}
-.passos h3{text-transform:uppercase;letter-spacing:.2em;font-size:.8rem;font-weight:500;color:var(--preto);margin-bottom:.3rem}
+.passos h3{text-transform:uppercase;letter-spacing:.2em;font-size:.8rem;color:var(--preto);margin-bottom:.3rem}
 .passos p{color:var(--cinza);font-size:.95rem}
-/* contato */
 .contato{background:var(--preto);color:#d8d0c6;text-align:center;padding:96px 0 100px}
 .contato .frase{color:#fff;margin:0 auto 1.4rem}
 .contato p.txt{color:#a39a8f;margin:0 auto 2.2rem}
@@ -111,62 +124,87 @@ footer img{height:18px;width:auto}
   background:var(--preto);border:1px solid #3a3632;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.25)}
 .whats-fixo svg{width:26px;height:26px;fill:#25d366}
 @media (min-width:760px){
+  .cartoes{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .chips{margin:0 0 30px;padding:0}
   .projetos{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 24px}
   .projeto:first-child{grid-column:auto}.projeto:first-child img{aspect-ratio:4/5}
-  .proj-nomes{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .nomes{grid-template-columns:repeat(4,minmax(0,1fr))}
   .grade-logos{grid-template-columns:repeat(7,minmax(0,1fr));gap:18px 26px}
   .passos{grid-template-columns:repeat(4,1fr)}
-  .lista{display:grid;grid-template-columns:1fr 1fr;column-gap:50px}
   .fotos{grid-template-columns:1.3fr 1fr;align-items:end;gap:40px;max-width:1240px;margin:0 auto;padding:0 26px 110px}
   .fotos figure:first-child{grid-row:span 2}
   .legenda{padding-left:0}
   .contato .acoes{flex-direction:row;justify-content:center}
   .contato .btn{width:auto}
   section{padding:120px 0}
-  .topo{height:84px}.topo img{height:26px}
   .manifesto .caixa{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
-  .manifesto p.txt{margin-top:2.4rem}
 }
 </style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FurnitureStore","name":"Adentro Móveis",
- "description":"Marcenaria sob medida, móveis planejados e mobiliário para áreas comuns, unidades decoradas, corporativo e hotelaria.",
- "url":"https://adentromoveis.com.br/","telephone":"+55-61-99573-5885",
- "image":"https://adentromoveis.com.br/img/mesa-redonda-madeira-cadeiras.jpg",
- "areaServed":{"@type":"City","name":"Brasília"},
- "address":{"@type":"PostalAddress","addressLocality":"Brasília","addressRegion":"DF","addressCountry":"BR"}}
-</script>
 </head>
 <body>
-<div class="previa">PRÉVIA para o Luiz aprovar. Ainda não está no endereço oficial.</div>
+<div class="previa">PRÉVIA para o Luiz aprovar. Ainda não está no endereço oficial. Caixas tracejadas = falta informação.</div>
 <main>
 <section class="capa" id="inicio" aria-label="Apresentação">
   <header><div class="caixa topo">
-    <a href="#inicio" aria-label="Adentro Móveis, início"><img src="img/logo-adentro.webp" alt="Adentro" width="136" height="30"></a>
+    <a href="#inicio" aria-label="Adentro, início"><img src="img/logo-adentro.webp" alt="Adentro" width="136" height="30"></a>
     <input type="checkbox" id="menu-abre" hidden>
     <label for="menu-abre" class="menu-btn" aria-label="Abrir menu"><span></span></label>
-    <nav aria-label="Menu principal"><label for="menu-abre" class="fechar" aria-label="Fechar menu">&times;</label><ul>
-      <li><a href="#sobre">A Adentro</a></li>
-      <li><a href="#fotos">Fotos</a></li>
-      <li><a href="#o-que-fazemos">O que fazemos</a></li>
+    <nav class="menu" aria-label="Menu principal"><label for="menu-abre" class="fechar" aria-label="Fechar menu">&times;</label>
+      <p class="sub">Linhas</p><ul>
+      <li><a href="#l-marcenaria">Marcenaria sob medida</a></li>
+      <li><a href="#l-sofas">Sofás e estofados</a></li>
+      <li><a href="#l-soltos">Móveis soltos</a></li>
+      <li><a href="#l-adornos">Adornos e decoração</a></li>
+      <li><a href="#l-empreendimentos">Para construtoras e empresas</a></li></ul>
+      <p class="sub">Adentro</p><ul>
+      <li><a href="#lojas">Lojas</a></li>
+      <li><a href="#sobre">Quem somos</a></li>
       <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#clientes">Clientes</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul></nav>
+      <li><a href="#contato">Contato</a></li></ul>
+    </nav>
   </div></header>
   <img src="img/mesa-redonda-madeira-cadeiras.webp" alt="Mesa redonda de madeira com tampo em raios e cadeiras estofadas" width="1201" height="1280" fetchpriority="high">
   <div class="caixa">
-    <h1>Marcenaria e mobiliário sob medida em Brasília</h1>
-    <a class="btn" href="#fotos">Conheça</a>
+    <h1>Marcenaria, móveis e decoração em Brasília</h1>
+    <p class="sub">Do móvel sob medida ao sofá, à cadeira e à almofada: a casa ou o empreendimento inteiro, com uma só empresa.</p>
+    <a class="btn" href="#linhas">Por onde começar</a>
+  </div>
+</section>
+
+<section class="linhas" id="linhas">
+  <div class="caixa">
+    <h2>Por onde começar</h2>
+    <nav class="chips" aria-label="Linhas"><a href="#l-marcenaria">Marcenaria</a><a href="#l-sofas">Sofás</a><a href="#l-soltos">Móveis soltos</a><a href="#l-adornos">Adornos</a><a href="#l-empreendimentos">Construtoras</a><a href="#lojas">Lojas</a></nav>
+    <div class="cartoes">
+      <a class="cartao sem-foto" id="l-marcenaria" href="#contato"><div class="t"><span class="n">01</span><h3>Marcenaria sob medida</h3>
+        <p>Cozinhas, áreas gourmet, armários, closets, painéis e shafts, feitos na nossa marcenaria com corte em router CNC e conferência peça por peça.</p>
+        <span class="falta">Falta: foto real de marcenaria entregue (cozinha, closet ou área gourmet)</span></div></a>
+      <a class="cartao sem-foto" id="l-sofas" href="#contato"><div class="t"><span class="n">02</span><h3>Sofás e estofados</h3>
+        <p>Sofás, poltronas, chaises, puffes, cabeceiras e camas, com tecido escolhido no mostruário.</p>
+        <ul><li>Sofás</li><li>Poltronas</li><li>Puffes</li><li>Cabeceiras</li><li>Camas</li></ul>
+        <span class="falta">Falta: foto real de sofá entregue; e quais são fabricados por vocês e quais vêm de fábrica</span></div></a>
+      <a class="cartao" id="l-soltos" href="#contato"><img src="img/mesa-redonda-madeira-cadeiras.webp" alt="Mesa redonda de madeira e cadeiras estofadas" loading="lazy" width="1201" height="1280">
+        <div class="t"><span class="n">03</span><h3>Móveis soltos</h3><p>Mesas, cadeiras, banquetas, aparadores, buffets e área externa: fabricados aqui ou escolhidos entre mais de 150 fábricas do Brasil.</p>
+        <ul><li>Mesas</li><li>Cadeiras</li><li>Banquetas</li><li>Aparadores</li><li>Área externa</li></ul></div></a>
+      <a class="cartao" id="l-adornos" href="#contato"><img src="img/almofadas-moveis-e-adornos.webp" alt="Almofadas bordadas sobre sofá claro" loading="lazy" width="900" height="791">
+        <div class="t"><span class="n">04</span><h3>Adornos e decoração</h3><p>Almofadas, tapetes, luminárias, espelhos e objetos para completar o ambiente.</p>
+        <ul><li>Almofadas</li><li>Luminárias</li><li>Espelhos</li><li>Tapetes</li></ul></div></a>
+      <a class="cartao" id="l-empreendimentos" href="#projetos"><img src="img/obra-duuo.webp" alt="Empreendimento Duuo" loading="lazy" width="700" height="822">
+        <div class="t"><span class="n">05</span><h3>Para construtoras e empresas</h3><p>Áreas comuns, unidades decoradas, stands de venda, escritórios e protótipos de hotel, com o mobiliário completo do caderno de vendas.</p></div></a>
+      <a class="cartao sem-foto" href="#lojas"><div class="t"><span class="n">06</span><h3>Lojas</h3><p>Venha ver de perto os mostruários, tecidos e peças.</p>
+        <span class="falta">Falta: quais lojas, endereços, horários e fotos</span></div></a>
+    </div>
   </div>
 </section>
 
 <section class="manifesto" id="sobre">
   <div class="caixa">
-    <div><span class="maius">A Adentro</span>
-      <p class="frase">Uma só empresa cuidando de todo o mobiliário, do desenho à montagem.</p></div>
-    <div><p class="txt">Fazemos móveis sob medida na nossa marcenaria, com corte em router CNC e conferência peça por peça. E pesquisamos em todo o Brasil os móveis e complementos que combinam com cada projeto: áreas comuns, unidades decoradas, escritórios e hotéis.</p>
-      <p class="txt">Nascemos do Grupo IVI para atender construtoras e empresas, com garantia e suporte depois da entrega.</p></div>
+    <div><span class="maius">Quem somos</span>
+      <p class="frase">Uma só empresa cuidando do móvel, do sofá e da decoração.</p></div>
+    <div><p class="txt">A Adentro nasceu do Grupo IVI. Fazemos marcenaria sob medida na nossa fábrica e pesquisamos em todo o Brasil os móveis e complementos que combinam com cada projeto, sempre com garantia e suporte depois da entrega.</p>
+      <p class="txt">Atendemos famílias, arquitetos, construtoras e empresas: da cozinha planejada ao empreendimento inteiro mobiliado.</p>
+      <div class="numeros"><div><b>2001</b><span>primeira loja de móveis e adornos</span></div><div><b>150+</b><span>fábricas parceiras</span></div><div><b>30+</b><span>empreendimentos atendidos</span></div></div>
+      <span class="falta">Conferir: 150+ vem do catálogo (175 fábricas); 30+ soma o portfólio de 2021 e 2023</span></div>
   </div>
 </section>
 
@@ -176,37 +214,44 @@ footer img{height:18px;width:auto}
   <figure class="foto-cheia"><img src="img/cadeira-estofada-madeira.webp" alt="Cadeira de madeira escura com assento e encosto estofados" loading="lazy" width="900" height="1079">
     <figcaption class="legenda"><b>(02)</b> Cadeira em madeira e estofado</figcaption></figure>
   <figure class="foto-cheia"><img src="img/almofadas-moveis-e-adornos.webp" alt="Almofadas bordadas em tons de mostarda e bege sobre sofá claro" loading="lazy" width="900" height="791">
-    <figcaption class="legenda"><b>(03)</b> Adornos escolhidos para o projeto</figcaption></figure>
+    <figcaption class="legenda"><b>(03)</b> Almofadas e adornos</figcaption></figure>
 </div>
 
-<section class="servicos" id="o-que-fazemos">
+<section class="lojas" id="lojas">
   <div class="caixa">
-    <h2>O que fazemos</h2>
-    <ul class="lista">
-      <li><h3>Marcenaria sob medida</h3><p>Cozinhas, áreas gourmet, armários, painéis e mesas.</p></li>
-      <li><h3>Áreas comuns</h3><p>Salões de festa, halls e espaços de convivência.</p></li>
-      <li><h3>Unidades decoradas e stands</h3><p>Do caderno de vendas ao apartamento montado.</p></li>
-      <li><h3>Corporativo e hotelaria</h3><p>Escritórios, lojas e protótipos hoteleiros.</p></li>
-      <li><h3>Móveis e adornos</h3><p>Peças escolhidas em todo o Brasil para o seu projeto.</p></li>
+    <h2>Lojas</h2>
+    <div class="loja"><h3>IVI Interiores</h3><p>Loja do Grupo IVI, com mostruários de tecidos e móveis.</p>
+      <span class="falta">Confirmar: a IVI Interiores entra no site da Adentro? Endereço, horário, telefone e foto. Tem mais de uma unidade?</span></div>
+    <div class="loja"><h3>Outras lojas</h3>
+      <span class="falta">Falta: nomes e endereços das outras lojas</span></div>
+    <h2 style="margin-top:64px">Desde 2001</h2>
+    <ul class="historia">
+      <li><b>2001</b><span>Primeira loja de móveis e adornos.</span></li>
+      <li><b>2003 a 2006</b><span>Franqueados de marcas de alto padrão: Saccaro Móveis no Casa Park e Bentec Planejados no Shopping ID.</span></li>
+      <li><b>2012</b><span>Nasce a Adentro, a partir do Grupo IVI, para construtoras, condomínios e hotelaria.</span></li>
+      <li><b>2017</b><span>De volta ao varejo, com atendimento personalizado e produtos premium.</span></li>
+      <li><b>Hoje</b><span>Marcenaria própria com router CNC, sofás, móveis soltos e decoração.</span></li>
     </ul>
+    <span class="falta">Texto do site de 2021: confirmar se continua certo e o que entrou depois de 2017</span>
   </div>
 </section>
 
 <section id="projetos">
   <div class="caixa">
     <h2>Projetos</h2>
-    <p class="txt" style="margin-bottom:34px">Empreendimentos de Brasília em que já trabalhamos.</p>
+    <p class="txt" style="margin-bottom:34px">Unidades decoradas, stands de venda, áreas comuns, shoppings e hotel em Brasília.</p>
     <div class="projetos">
       <figure class="projeto"><img src="img/obra-duuo.webp" alt="Empreendimento Duuo" loading="lazy" width="700" height="822"><h3>Duuo</h3><span>Brasília</span></figure>
       <figure class="projeto"><img src="img/obra-paco-linea.webp" alt="Empreendimento Paço Linea" loading="lazy" width="700" height="812"><h3>Paço Linea</h3><span>Brasília</span></figure>
       <figure class="projeto"><img src="img/obra-chopin.webp" alt="Empreendimento Chopin" loading="lazy" width="700" height="851"><h3>Chopin</h3><span>Brasília</span></figure>
     </div>
-    <ul class="proj-nomes">
-      <li class="proj-nome"><h3>Park Sul</h3><span>Brasília</span></li>
-      <li class="proj-nome"><h3>Absoluto</h3><span>Brasília</span></li>
-      <li class="proj-nome"><h3>Supremo</h3><span>Brasília</span></li>
-      <li class="proj-nome"><h3>Metropolitan</h3><span>Brasília</span></li>
+    <ul class="nomes">
+      <li>Park Sul</li><li>Absoluto</li><li>Supremo</li><li>Metropolitan</li><li>Città</li><li>Aquarius</li><li>Sagitarius</li><li>Towers</li>
+      <li>Chateau Valois</li><li>Olympique</li><li>Sofisticatto</li><li>Viva</li><li>Reserva Especial</li><li>Reserva 109</li><li>Reserva das Artes</li><li>Reserva Naturale</li>
+      <li>Versat</li><li>Flampark</li><li>Max Home e Mall</li><li>Village</li><li>San Giovanni</li><li>Boulevard das Acácias</li><li>Tower Club</li><li>Hotel Smart4</li>
+      <li>Vista Shopping</li><li>Brasília Shopping</li><li>Vitrinni Shopping</li><li>Living Park Sul</li>
     </ul>
+    <span class="falta">Lista do portfólio de 2021 e 2023. Conferir se pode citar todos e incluir os mais novos (ex.: stand Emplavi no Park Shopping)</span>
   </div>
 </section>
 
@@ -244,9 +289,9 @@ footer img{height:18px;width:auto}
   <div class="caixa">
     <h2>Como trabalhamos</h2>
     <ol class="passos">
-      <li><h3>Conversa</h3><p>Você manda a planta, fotos ou a ideia do ambiente.</p></li>
-      <li><h3>Projeto e orçamento</h3><p>Medimos, detalhamos cada peça e mandamos a proposta por ambiente.</p></li>
-      <li><h3>Fabricação</h3><p>Corte em router CNC na nossa marcenaria e conferência antes de sair.</p></li>
+      <li><h3>Conversa</h3><p>Você manda a planta, fotos ou a ideia do ambiente, ou vem até a loja.</p></li>
+      <li><h3>Projeto e orçamento</h3><p>Medimos, detalhamos e mandamos a proposta por ambiente: marcenaria, móveis e decoração juntos.</p></li>
+      <li><h3>Fabricação e compra</h3><p>A marcenaria é cortada na nossa router CNC; os móveis vêm das fábricas que escolhemos com você.</p></li>
       <li><h3>Entrega e montagem</h3><p>Nossa equipe instala e acompanha depois da entrega.</p></li>
     </ol>
   </div>
@@ -269,7 +314,7 @@ footer img{height:18px;width:auto}
 <footer>
   <div class="caixa">
     <img src="img/logo-adentro.webp" alt="Adentro" width="100" height="22">
-    <span>Marcenaria e mobiliário sob medida · Brasília - DF</span>
+    <span>Marcenaria, móveis e decoração · Grupo IVI · Brasília - DF</span>
   </div>
 </footer>
 
