@@ -102,9 +102,17 @@ nav.menu .sub{color:#8f857a;font-size:.66rem;letter-spacing:.28em;text-transform
 .clientes{background:var(--claro);padding:70px 0}
 .clientes h2,.clientes p.txt{text-align:center}
 .clientes p.txt{margin:0 auto 34px}
-.grade-logos{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 10px}
-.grade-logos li{min-width:0;display:flex;align-items:center;justify-content:center}
-.grade-logos img{width:100%;aspect-ratio:2/1;object-fit:contain;opacity:.72;filter:grayscale(1)}
+.grade-nomes{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--linha);max-width:900px;margin:0 auto}
+.grade-nomes li:last-child:nth-child(odd){grid-column:1/-1}
+.grade-nomes li{min-width:0;padding:16px 6px;border-bottom:1px solid var(--linha);text-align:center;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:500;color:#5a524a}
+.obra-destaque{margin-bottom:56px}
+.obra-destaque>h3{font-family:var(--serif);font-weight:400;font-size:1.5rem;color:var(--preto)}
+.obra-destaque>span{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.2em;color:var(--cinza);margin:.3rem 0 20px}
+.galeria{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}
+.galeria figure{margin:0;min-width:0}
+.galeria figure:first-child{grid-column:1/-1}
+.galeria img{width:100%;height:auto;aspect-ratio:1170/738;object-fit:cover}
+.galeria figcaption{font-size:.68rem;text-transform:uppercase;letter-spacing:.16em;color:var(--cinza);margin-top:.5rem}
 .passos{list-style:none;counter-reset:p;display:grid;gap:34px}
 .passos li{counter-increment:p}
 .passos li:before{content:"0" counter(p);display:block;font-family:var(--serif);font-size:1.9rem;color:var(--madeira);margin-bottom:.4rem}
@@ -129,7 +137,9 @@ footer img{height:18px;width:auto}
   .projetos{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 24px}
   .projeto:first-child{grid-column:auto}.projeto:first-child img{aspect-ratio:4/5}
   .nomes{grid-template-columns:repeat(4,minmax(0,1fr))}
-  .grade-logos{grid-template-columns:repeat(7,minmax(0,1fr));gap:18px 26px}
+  .grade-nomes{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .galeria{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+  .galeria figure:first-child{grid-column:auto}
   .passos{grid-template-columns:repeat(4,1fr)}
   .fotos{grid-template-columns:1.3fr 1fr;align-items:end;gap:40px;max-width:1240px;margin:0 auto;padding:0 26px 110px}
   .fotos figure:first-child{grid-row:span 2}
@@ -189,7 +199,7 @@ footer img{height:18px;width:auto}
       <a class="cartao" id="l-adornos" href="#contato"><img src="img/almofadas-moveis-e-adornos.webp" alt="Almofadas bordadas sobre sofá claro" loading="lazy" width="900" height="791">
         <div class="t"><span class="n">04</span><h3>Adornos e decoração</h3><p>Almofadas, tapetes, luminárias, espelhos e objetos para completar o ambiente.</p>
         <ul><li>Almofadas</li><li>Luminárias</li><li>Espelhos</li><li>Tapetes</li></ul></div></a>
-      <a class="cartao" id="l-empreendimentos" href="#projetos"><img src="img/obra-duuo.webp" alt="Empreendimento Duuo" loading="lazy" width="700" height="822">
+      <a class="cartao" id="l-empreendimentos" href="#projetos"><img src="img/boulevard-salao-festas.webp" alt="Salão de festas mobiliado do Boulevard das Acácias" loading="lazy" width="1170" height="738">
         <div class="t"><span class="n">05</span><h3>Para construtoras e empresas</h3><p>Áreas comuns, unidades decoradas, stands de venda, escritórios e protótipos de hotel, com o mobiliário completo do caderno de vendas.</p></div></a>
       <a class="cartao sem-foto" href="#lojas"><div class="t"><span class="n">06</span><h3>Lojas</h3><p>Venha ver de perto os mostruários, tecidos e peças.</p>
         <span class="falta">Falta: quais lojas, endereços, horários e fotos</span></div></a>
@@ -215,6 +225,10 @@ footer img{height:18px;width:auto}
     <figcaption class="legenda"><b>(02)</b> Cadeira em madeira e estofado</figcaption></figure>
   <figure class="foto-cheia"><img src="img/almofadas-moveis-e-adornos.webp" alt="Almofadas bordadas em tons de mostarda e bege sobre sofá claro" loading="lazy" width="900" height="791">
     <figcaption class="legenda"><b>(03)</b> Almofadas e adornos</figcaption></figure>
+  <figure class="foto-cheia"><img src="img/boulevard-pergolado-mesas.webp" alt="Área gourmet com pergolado de madeira, churrasqueira e mesas no Boulevard das Acácias" loading="lazy" width="1170" height="738">
+    <figcaption class="legenda"><b>(04)</b> Área gourmet · Boulevard das Acácias</figcaption></figure>
+  <figure class="foto-cheia"><img src="img/boulevard-sala-tv.webp" alt="Sala de TV com poltronas e painel no Boulevard das Acácias" loading="lazy" width="1170" height="738">
+    <figcaption class="legenda"><b>(05)</b> Sala de TV · Boulevard das Acácias</figcaption></figure>
 </div>
 
 <section class="lojas" id="lojas">
@@ -240,6 +254,17 @@ footer img{height:18px;width:auto}
   <div class="caixa">
     <h2>Projetos</h2>
     <p class="txt" style="margin-bottom:34px">Unidades decoradas, stands de venda, áreas comuns, shoppings e hotel em Brasília.</p>
+    <div class="obra-destaque">
+      <h3>Boulevard das Acácias</h3><span>Áreas comuns mobiliadas · Brasília · fotos da obra entregue</span>
+      <div class="galeria">
+        <figure><img src="img/boulevard-salao-festas.webp" alt="Salão de festas com mesas e cadeiras brancas" loading="lazy" width="1170" height="738"><figcaption>Salão de festas</figcaption></figure>
+        <figure><img src="img/boulevard-pergolado.webp" alt="Pergolado de madeira com churrasqueira e bancada" loading="lazy" width="1170" height="738"><figcaption>Pergolado e churrasqueira</figcaption></figure>
+        <figure><img src="img/boulevard-salao-mesa.webp" alt="Espaço com mesa de madeira e cadeiras de acrílico" loading="lazy" width="1170" height="738"><figcaption>Espaço gourmet</figcaption></figure>
+        <figure><img src="img/boulevard-jogos.webp" alt="Sala de jogos com mesa de bilhar e mesa redonda" loading="lazy" width="1170" height="738"><figcaption>Sala de jogos</figcaption></figure>
+        <figure><img src="img/boulevard-academia.webp" alt="Academia equipada" loading="lazy" width="1170" height="738"><figcaption>Academia</figcaption></figure>
+      </div>
+      <span class="falta">Fotos do portfólio do site antigo (2021). Confirmar se pode usar e se há fotos de obras mais novas (marcenaria, sofás, Emplavi)</span>
+    </div>
     <div class="projetos">
       <figure class="projeto"><img src="img/obra-duuo.webp" alt="Empreendimento Duuo" loading="lazy" width="700" height="822"><h3>Duuo</h3><span>Brasília</span></figure>
       <figure class="projeto"><img src="img/obra-paco-linea.webp" alt="Empreendimento Paço Linea" loading="lazy" width="700" height="812"><h3>Paço Linea</h3><span>Brasília</span></figure>
@@ -259,29 +284,30 @@ footer img{height:18px;width:auto}
   <div class="caixa">
     <h2>Clientes</h2>
     <p class="txt">Construtoras, incorporadoras, shoppings e hotel que confiaram na Adentro.</p>
-    <ul class="grade-logos">
-      <li><img src="img/logos/brasilia-shopping.webp" alt="Brasília Shopping" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/vitrinni-shopping.webp" alt="Vitrinni Shopping" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/s4-hotel.webp" alt="S4 Hotel" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/inttermedium.webp" alt="Inttermedium" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/faenge.webp" alt="Faenge" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/brasal.webp" alt="Brasal Incorporações" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/canova-medeiros.webp" alt="Canova Medeiros" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/emarki.webp" alt="Emarki" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/porto.webp" alt="Porto" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/ipe-omni.webp" alt="IPE-Omni" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/oas.webp" alt="OAS Empreendimentos" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/direcional.webp" alt="Direcional" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/soltec.webp" alt="Soltec" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/attos.webp" alt="Grupo Attos" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/3l-engenharia.webp" alt="3L Engenharia" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/linea-jr.webp" alt="Linea Jr" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/joao-fortes.webp" alt="João Fortes" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/lb-valor.webp" alt="LB Valor" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/area-realty.webp" alt="Area Realty" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/base.webp" alt="Base" loading="lazy" width="480" height="240"></li>
-      <li><img src="img/logos/city.webp" alt="City" loading="lazy" width="480" height="240"></li>
+    <ul class="grade-nomes">
+      <li>Brasília Shopping</li>
+      <li>Vitrinni Shopping</li>
+      <li>S4 Hotel</li>
+      <li>Inttermedium</li>
+      <li>Faenge</li>
+      <li>Brasal Incorporações</li>
+      <li>Canova Medeiros</li>
+      <li>Emarki</li>
+      <li>Porto</li>
+      <li>IPE-Omni</li>
+      <li>OAS Empreendimentos</li>
+      <li>Direcional</li>
+      <li>Soltec</li>
+      <li>Grupo Attos</li>
+      <li>3L Engenharia</li>
+      <li>Linea Jr</li>
+      <li>João Fortes</li>
+      <li>LB Valor</li>
+      <li>Area Realty</li>
+      <li>Base</li>
+      <li>City</li>
     </ul>
+    <span class="falta">Para pôr os logos coloridos de verdade: pedir a cada cliente o logo original (SVG ou PNG grande). Os recortes da imagem antiga ficavam borrados.</span>
   </div>
 </section>
 
